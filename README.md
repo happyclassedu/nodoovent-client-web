@@ -58,6 +58,7 @@ To handle the application Web server layer, Nodoovent-client-web is using a top 
 
 * Project : 
 	* [todoovent wiki](https://github.com/g4llic4/nodoovent/wiki)
+	* [todoovent diagrams](http://simon-renoult.com/todoovent/)
 * About node.js : 
 	* [Official node.js doc](http://nodejs.org/api/)
 	* [Node.js tutorial (en) ](http://www.nodebeginner.org/)
