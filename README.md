@@ -21,30 +21,19 @@ To handle the application Web server layer, Nodoovent-client-web is using a top 
 
 * Server :
 
-##### node.js :
+### Installation instructions :
 
-	-> /!\ Not from ubuntu repositories
-	-> Use ppa repository to get the latest version (0.6.17 currently) :
+#### node.js :
 
-	sudo apt-get install python-software-properties
-	sudo add-apt-repository ppa:chris-lea/node.js
-	sudo apt-get update
-	sudo apt-get install nodejs
-	(Docs at https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)	
+	See [here](https://github.com/joyent/node/wiki/Installation) (Official node.js wiki)
 
-##### express :
-	
-	sudo npm install -g express
-	cd /repository/of/my/application
-	npm install -d
+#### express :
 
-##### Optional - node.js debugger (development version only) :
+	Already present in node_modules.
 
-	-> Use node-inspector :
+#### Optional - node.js debugger (development version only) :
 
-	sudo npm install node-inspector
-	(Docs at https://github.com/dannycoates/node-inspector)
-
+	See [node-inspector](https://github.com/dannycoates/node-inspector/wiki/Getting-Started---from-scratch) (Officiel node-inspector wiki)
 
 ### Howto :
 
