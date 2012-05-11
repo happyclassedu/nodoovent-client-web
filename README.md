@@ -14,16 +14,11 @@ To handle the application Web server layer, Nodoovent-client-web is using a top 
 ## Installation instruction :
 
 * Client : 
-+ Optional - Debugger :
-We recommend you to use a Web browser debugger (WebKit Inspector, Firebug, etc.)
-
+	* Optional - Debugger : We recommend you to use a Web browser debugger (WebKit Inspector, Firebug, etc.)
 * Server :
-+ node.js :
-See [here](https://github.com/joyent/node/wiki/Installation) (Official node.js wiki)
-+ express :
-Already present in node_modules.
-+ Optional - node.js debugger (development version only) :
-See [node-inspector](https://github.com/dannycoates/node-inspector/wiki/Getting-Started---from-scratch) (Officiel node-inspector wiki)
+	* node.js : See [here](https://github.com/joyent/node/wiki/Installation) (Official node.js wiki)
+	* express : Already present in node_modules.
+	* Optional - node.js debugger (development version only) : See [node-inspector](https://github.com/dannycoates/node-inspector/wiki/Getting-Started---from-scratch) (Officiel node-inspector wiki)
 
 ## Howto :
 
