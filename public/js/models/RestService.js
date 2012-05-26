@@ -2,12 +2,12 @@
  * RestService Object.
  * Once instantiated, allow user to make requests on a remote service.
  * 
- * @param address {String} Remote service address. Default '127.0.0.1'.
- * @param port {Integer} Remote service port. Default 1337.
- * @param timeout {Integer} Maximum elapsed time per request. Default 6000.
- * @param isAsync {Boolean} Asynchronous behavior. Default true.
- * @param contentType {String} Type used one sends a request. Default 'application/json'.
- * @param dataType {String} Type used when remote service sends its respone. Default 'json'.
+ * [ @param address {String} Remote service address. Default '127.0.0.1'. ]
+ * [ @param port {Integer} Remote service port. Default 1337. ]
+ * [ @param timeout {Integer} Maximum elapsed time per request. Default 6000. ]
+ * [ @param isAsync {Boolean} Asynchronous behavior. Default true. ]
+ * [ @param contentType {String} Type used one sends a request. Default 'application/json'. ]
+ * [ @param dataType {String} Type used when remote service sends its respone. Default 'json'. ]
  */
 function RestService ( address, port, timeout, isAsync, contentType, dataType ) {
 	this.url = address || 'http://127.0.0.1'
