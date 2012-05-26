@@ -3,8 +3,8 @@
  * Once instantiated, allow user to make requests on a remote service.
  * 
  * [ @param address {String} Remote service address. Default '127.0.0.1'. ]
- * [ @param port {Integer} Remote service port. Default 1337. ]
- * [ @param timeout {Integer} Maximum elapsed time per request. Default 6000. ]
+ * [ @param port {Number} Remote service port. Default 1337. ]
+ * [ @param timeout {Number} Maximum elapsed time per request. Default 6000. ]
  * [ @param isAsync {Boolean} Asynchronous behavior. Default true. ]
  * [ @param contentType {String} Type used one sends a request. Default 'application/json'. ]
  * [ @param dataType {String} Type used when remote service sends its respone. Default 'json'. ]
@@ -42,7 +42,7 @@ RestService.prototype.read = function ( destination, successCallback, failureCal
  * Ajax create resource function.
  * 
  * @param destination {String} Required resource url.
- * @param model {Integer} Required resource model. Must be db compliant.
+ * @param model {Object} Required resource model. Must be db compliant.
  * @param successCallback {Function} Function to execute if url is reached.
  * @param failureCallback {Function} Function to execute if url is not reached.
  * [ @param isAsync {Boolean} Override the class default asynchronous behavior. ]
@@ -66,7 +66,7 @@ RestService.prototype.create = function ( destination, model, successCallback, f
  * Ajax update resource function.
  * 
  * @param destination {String} Required resource url.
- * @param model {Integer} Required resource model. Must be db compliant.
+ * @param model {Object} Required resource model. Must be db compliant.
  * @param successCallback {Function} Function to execute if url is reached.
  * @param failureCallback {Function} Function to execute if url is not reached.
  * [ @param isAsync {Boolean} Override the class default asynchronous behavior. ]
@@ -104,4 +104,19 @@ RestService.prototype.remove = function ( destination, successCallback, failureC
 		error: failureCallback /*( req, status, ex )*/,
 		timeout : this.timeout
 	} );
+};
+
+/**
+ * Describe the RestService object.
+ * 
+ * @return {String} Object description.
+ */
+RestService.prototype.describe = function ( ) {
+	return 'Connected to ' + this.address + ':' + this.port + '.\n'
+		+ 'Timeout : ' + this.timeout + '. '
+		+ 'Can be changed in object embed functions.\n'
+		+ 'Type send : ' + this.contentType + '. '
+		+ 'Type received : ' + this.dataType + '.\n'
+		+ 'Am I asynchrone ? ' + this.isAsync + '. '
+		+ 'Can be changed in object embed functions.\n'
 };
