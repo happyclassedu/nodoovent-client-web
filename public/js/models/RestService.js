@@ -30,7 +30,7 @@ RestService.prototype.read = function ( destination, successCallback, failureCal
 	$.ajax ( {
 		async: isAsync || this.isAsync,
 		type: 'GET',
-		url: this.url + ':' + this.port + destination + '/' + id,
+		url: this.url + ':' + this.port + '/' + destination,
 		dataType: this.dataType,
 		success: successCallback,
 		error: failureCallback /*( req, status, ex )*/,
@@ -51,7 +51,7 @@ RestService.prototype.create = function ( destination, model, successCallback, f
 	$.ajax ( {
 		async: isAsync || this.isAsync,
 		type : 'POST',
-		url : this.url + ':' + this.port + destination,
+		url : this.url + ':' + this.port + '/' + destination,
 		contentType : this.contentType,
 		data : JSON.stringify ( model ),
 		dataType : this.dataType,
@@ -75,7 +75,7 @@ RestService.prototype.update = function ( destination, model, successCallback, f
 	$.ajax ( {
 		async: isAsync || this.isAsync,
 		type : 'PUT',
-		url : this.url + ':' + this.port + destination,
+		url : this.url + ':' + this.port + '/' + destination,
 		contentType : this.contentType,
 		data : JSON.stringify ( model ),
 		dataType : this.dataType,
@@ -98,7 +98,7 @@ RestService.prototype.remove = function ( destination, successCallback, failureC
 	$.ajax ( {
 		async: isAsync || this.isAsync,
 		type : 'DELETE',
-		url: this.url + ':' + this.port + destination,
+		url: this.url + ':' + this.port + '/' + destination,
 		dataType : this.dataType,
 		sucess : successCallback,
 		error: failureCallback /*( req, status, ex )*/,
