@@ -1,4 +1,4 @@
-/**
+﻿/**
  * RestService Object.
  * Once instantiated, allow user to make requests on a remote service.
  * 
